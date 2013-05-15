@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ Esri Inc. licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<!-- fgdc-indexables.xml -->
+<indexables>
+ 
+  <property meaning="title" xpath="/metadata/idinfo/citation/citeinfo/title"/>
+  <property meaning="abstract" xpath="/metadata/idinfo/descript/abstract"/>
+    
+  <property meaning="keywords"
+    xpath="/metadata/idinfo/keywords/theme/themekey | /metadata/idinfo/keywords/place/placekey"/>
+    
+  <property meaning="envelope" xpath="/metadata/idinfo/spdom/bounding">
+    <property meaning="envelope.west" xpath="westbc"/>
+    <property meaning="envelope.south" xpath="southbc"/>
+    <property meaning="envelope.east" xpath="eastbc"/>
+    <property meaning="envelope.north" xpath="northbc"/>
+  </property>   
+    
+  <property meaning="resource.url" xpath="/metadata/idinfo/citation/citeinfo/onlink[2]"/>
+  <property meaning="website.url" xpath="/metadata/idinfo/citation/citeinfo/onlink[1]"/>
+  <property meaning="thumbnail.url" xpath="/metadata/idinfo/browse/browsen"/>
+  <!--<property meaning="thumbnail.binary" xpath="/metadata/Binary/Thumbnail/Data"/>-->
+  <property meaning="startDate" xpath="/metadata/idinfo/timeperd/timeinfo/rngdates/begdate | /metadata/idinfo/timeperd/timeinfo/sngdate/caldate"/>
+  <property meaning="endDate" xpath="/metadata/idinfo/timeperd/timeinfo/rngdates/enddate | /metadata/idinfo/timeperd/timeinfo/sngdate/caldate"/>
+  <property meaning="contentType" xpath="/metadata/distinfo/resdesc"/>  
+  <property meaning="people" xpath="/metadata/idinfo/ptcontac/cntinfo/cntorgp/cntper"/>
+  <property meaning="dataTheme" xpath="/metadata/idinfo/keywords/theme[1]/themekey | /metadata/idinfo/keywords/theme[2]/themekey | /metadata/idinfo/keywords/theme[3]/themekey | /metadata/idinfo/keywords/theme[4]/themekey | /metadata/idinfo/keywords/theme[5]/themekey | /metadata/idinfo/keywords/theme[6]/themekey | /metadata/idinfo/keywords/theme[7] | /metadata/idinfo/keywords/theme[8]/themekey/themekey | /metadata/idinfo/keywords/theme[9]| /metadata/idinfo/keywords/theme[10]| /metadata/idinfo/keywords/theme[11] | /metadata/idinfo/keywords/theme[12]/themekey | /metadata/idinfo/keywords/theme[13]/themekey| /metadata/idinfo/keywords/theme[14]/themekey| /metadata/idinfo/keywords/theme[15]/themekey| /metadata/idinfo/keywords/theme[16]/themekey| /metadata/idinfo/keywords/theme[17]/themekey| /metadata/idinfo/keywords/theme[18]/themekey| /metadata/idinfo/keywords/theme[19]/themekey| /metadata/idinfo/keywords/theme[20]/themekey| /metadata/idinfo/keywords/place/placekey | /metadata/idinfo/ptcontac/cntinfo/cntorgp/cntper"/>
+  <property meaning="place" xpath="/metadata/idinfo/keywords/place/placekey"/>
+  <property meaning="origin" xpath="/metadata/idinfo/citation/citeinfo/origin"/>
+  <property meaning="distribution" xpath="/metadata/distinfo/distrib/cntinfo/cntorgp/cntorg"/>  
+  <property meaning="body" xpath="/metadata/idinfo/keywords/theme[1]/themekey | /metadata/idinfo/keywords/theme[2]/themekey | /metadata/idinfo/keywords/theme[3]/themekey | /metadata/idinfo/keywords/theme[4]/themekey | /metadata/idinfo/keywords/theme[5]/themekey | /metadata/idinfo/keywords/theme[6]/themekey | /metadata/idinfo/keywords/theme[7] | /metadata/idinfo/keywords/theme[8]/themekey/themekey | /metadata/idinfo/keywords/theme[9]| /metadata/idinfo/keywords/theme[10]| /metadata/idinfo/keywords/theme[11] | /metadata/idinfo/keywords/theme[12]/themekey | /metadata/idinfo/keywords/theme[13]/themekey| /metadata/idinfo/keywords/theme[14]/themekey| /metadata/idinfo/keywords/theme[15]/themekey| /metadata/idinfo/keywords/theme[16]/themekey| /metadata/idinfo/keywords/theme[17]/themekey| /metadata/idinfo/keywords/theme[18]/themekey| /metadata/idinfo/keywords/theme[19]/themekey| /metadata/idinfo/keywords/theme[20]/themekey| /metadata/idinfo/keywords/place/placekey | /metadata/idinfo/ptcontac/cntinfo/cntorgp/cntper"/>
+    
+</indexables>
+
