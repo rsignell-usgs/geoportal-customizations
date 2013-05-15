@@ -157,7 +157,7 @@
         <meaning-names>fileIdentifier,uuid,title</meaning-names>
         <meaning-names>contentType,dataTheme</meaning-names>
         <meaning-names>dateModified,abstract</meaning-names>
-        <meaning-names>resource.url,website.url,thumbnail.url,xml.url</meaning-names>
+        <meaning-names>resource.url,website.url,thumbnail.url,xml.url,odp.resource.url</meaning-names>
         <meaning-names>geometry,date,relation</meaning-names>
       </dc>
     </summary>
